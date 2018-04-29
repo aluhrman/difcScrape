@@ -1,0 +1,70 @@
+2015-11-15 13:54:05 [scrapy] INFO: Scrapy 1.1.0dev1 started (bot: difc)
+2015-11-15 13:54:05 [scrapy] INFO: Optional features available: ssl, http11
+2015-11-15 13:54:05 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'difc.spiders', 'SPIDER_MODULES': ['difc.spiders'], 'LOG_FILE': 'test.log', 'LOG_LEVEL': 'INFO', 'BOT_NAME': 'difc'}
+2015-11-15 13:54:05 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.closespider.CloseSpider',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.memdebug.MemoryDebugger',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.spiderstate.SpiderState',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2015-11-15 13:54:05 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'difc.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.ajaxcrawl.AjaxCrawlMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats',
+ 'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+2015-11-15 13:54:05 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2015-11-15 13:54:05 [kafka.client] INFO: Updating broker metadata: [BrokerMetadata(nodeId=1, host='172.17.42.1', port=9092)]
+2015-11-15 13:54:05 [kafka.client] INFO: Updating topic metadata: [TopicMetadata(topic='demo.crawled_difcApp', error=0, partitions=[PartitionMetadata(topic='demo.crawled_difcApp', partition=0, leader=1, replicas=(1,), isr=(1,), error=0)])]
+2015-11-15 13:54:05 [scrapy] INFO: Enabled item pipelines:
+['difc.pipelines.KafkaPipeline']
+2015-11-15 13:54:05 [scrapy] INFO: Spider opened
+2015-11-15 13:54:05 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2015-11-15 13:55:05 [scrapy] INFO: Crawled 249 pages (at 249 pages/min), scraped 231 items (at 231 items/min)
+2015-11-15 13:56:05 [scrapy] INFO: Crawled 540 pages (at 291 pages/min), scraped 510 items (at 279 items/min)
+2015-11-15 13:57:05 [scrapy] INFO: Crawled 839 pages (at 299 pages/min), scraped 805 items (at 295 items/min)
+2015-11-15 13:58:05 [scrapy] INFO: Crawled 1118 pages (at 279 pages/min), scraped 1070 items (at 265 items/min)
+2015-11-15 13:59:05 [scrapy] INFO: Crawled 1428 pages (at 310 pages/min), scraped 1379 items (at 309 items/min)
+2015-11-15 14:00:05 [scrapy] INFO: Crawled 1663 pages (at 235 pages/min), scraped 1598 items (at 219 items/min)
+2015-11-15 14:01:05 [scrapy] INFO: Crawled 1930 pages (at 267 pages/min), scraped 1864 items (at 266 items/min)
+2015-11-15 14:01:31 [scrapy] INFO: Closing spider (finished)
+2015-11-15 14:01:31 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 602397,
+ 'downloader/request_count': 2049,
+ 'downloader/request_method_count/GET': 2049,
+ 'downloader/response_bytes': 17575285,
+ 'downloader/response_count': 2049,
+ 'downloader/response_status_count/200': 2047,
+ 'downloader/response_status_count/502': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2015, 11, 15, 22, 1, 31, 362106),
+ 'item_scraped_count': 1980,
+ 'log_count/INFO': 16,
+ 'request_depth_max': 2,
+ 'response_received_count': 2047,
+ 'scheduler/dequeued': 2049,
+ 'scheduler/dequeued/memory': 2049,
+ 'scheduler/enqueued': 2049,
+ 'scheduler/enqueued/memory': 2049,
+ 'start_time': datetime.datetime(2015, 11, 15, 21, 54, 5, 144777)}
+2015-11-15 14:01:31 [scrapy] INFO: Spider closed (finished)
